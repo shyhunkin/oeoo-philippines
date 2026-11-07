@@ -1,1 +1,179 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0047A8"><meta name="description" content="Support OEOO Philippines through future approved donation channels."><title>Donate | OEOO Philippines</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><header class="header"><div class="nav-shell"><a class="logo" href="index.html" aria-label="OEOO Philippines home"><img src="oeoo-logo.png" alt="One Earth One Ocean"><span>PHILIPPINES</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav" aria-label="Main navigation"><a href="index.html" class="">Home</a><a href="about.html" class="">About</a><a href="projects.html" class="">Our work</a><a href="get-involved.html" class="">Get involved</a><a class="nav-donate active" href="donate.html">Donate <span aria-hidden="true">↗</span></a></nav></div></header><main><section class="donate-hero"><div class="container donate-hero-grid"><div><div class="kicker light">SUPPORT THE PHILIPPINES</div><h1>Your support<br>makes <em>waves.</em></h1><p>Help turn environmental ambition into action. Contributions can support marine fieldwork, education, and community-led conservation in the Philippines.</p><div class="trust-line"><span>✳</span> Local impact <span>✳</span> Collective action <span>✳</span> Long-term thinking</div></div><div class="donation-card"><div class="card-top"><span>MAKE A CONTRIBUTION</span><span class="demo-chip">DEMO · NOT LIVE</span></div><h2>Choose your impact.</h2><p>Preview a donation amount. Payments are not enabled yet.</p><div class="giving-toggle" role="group" aria-label="Donation frequency"><button class="frequency active" type="button" data-frequency="once" aria-pressed="true">Give once</button><button class="frequency" type="button" data-frequency="monthly" aria-pressed="false">Monthly giving</button></div><div class="amount-grid" role="group" aria-label="Donation amount"><button class="amount" type="button" data-amount="500">₱500</button><button class="amount active" type="button" data-amount="1000">₱1,000</button><button class="amount" type="button" data-amount="2500">₱2,500</button><button class="amount" type="button" data-amount="5000">₱5,000</button></div><label class="custom-label" for="customAmount">Or enter a custom amount (PHP)</label><div class="custom-wrap"><span>₱</span><input id="customAmount" type="number" inputmode="decimal" min="1" step="1" placeholder="Other amount"></div><div class="donation-summary" aria-live="polite"><span>Your selected contribution</span><strong id="donationSummary">₱1,000 · one-time</strong></div><button class="button donate-submit" type="button" disabled>Secure donations coming soon <span>↗</span></button><p class="donation-disclaimer">This is a website preview, not a payment form. No money or personal information is collected. Official donation instructions will appear after approval.</p></div></div></section><section class="section"><div class="container"><div class="section-heading"><div><div class="kicker">WHAT YOUR SUPPORT CAN ENABLE</div><h2>Every peso has<br><em>a purpose.</em></h2></div><p class="section-aside">These are examples of program areas, not promises of what a specific amount will purchase.</p></div><div class="feature-grid"><article class="simple-card"><span class="simple-icon">〰</span><h3>Field operations</h3><p>Logistics, materials, and equipment that support environmental work on the water and along the coast.</p></article><article class="simple-card"><span class="simple-icon">✳</span><h3>Education</h3><p>Learning activities and resources that help young people and communities engage with environmental issues.</p></article><article class="simple-card"><span class="simple-icon">✦</span><h3>Community initiatives</h3><p>Coordination and collaboration that help local conservation efforts grow and continue.</p></article></div></div></section><section class="section cream-section"><div class="container two-col"><div><div class="kicker">GIVING WITH CONFIDENCE</div><h2>Clarity matters.<br><em>So does trust.</em></h2></div><div><p class="lead">We want every supporter to understand how donations are received and used.</p><p>Before launching payments, this page will need OEOO-approved receiving details, donor receipt information, privacy disclosures, and a verified payment provider. We will publish these details here once confirmed.</p><p class="micro">Donation receipts and any potential tax treatment depend on the legal receiving entity and applicable rules. No tax deductibility is claimed by this demo.</p></div></div></section><section class="section"><div class="container center-cta"><div class="kicker">OTHER WAYS TO HELP</div><h2>Giving isn’t the only way.</h2><p>Organizations, schools, and individuals can also explore partnerships and other forms of support.</p><a class="button dark" href="get-involved.html">Get involved ↗</a></div></section></main><footer class="footer"><div class="container footer-grid"><div><a class="footer-logo" href="index.html">ONE EARTH<br>ONE OCEAN <span>PHILIPPINES</span></a><p>Local action for healthier waters and stronger coastal communities.</p></div><div><strong>Explore</strong><a href="about.html">About us</a><a href="projects.html">Our work</a><a href="get-involved.html">Get involved</a></div><div><strong>Support</strong><a href="donate.html">Donate</a><a href="get-involved.html#partner">Partner with us</a><a href="https://www.oeoo.world/" target="_blank" rel="noopener">OEOO Global ↗</a></div><div><strong>Connect</strong><p>Contact details and social channels to be added after OEOO approval.</p><small>© <span id="year"></span> OEOO Philippines. Demo website.</small></div></div></footer><script src="script.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0047A8">
+    <meta name="description" content="Support OEOO Philippines through future approved donation channels.">
+    <title>Donate | OEOO Philippines</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="nav-shell">
+        <a class="logo" href="index.html" aria-label="OEOO Philippines home">
+          <img src="oeoo-logo.png" alt="One Earth One Ocean">
+          <span>PHILIPPINES</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" class="">Home</a>
+          <a href="about.html" class="">About</a>
+          <a href="projects.html" class="">Our work</a>
+          <a href="get-involved.html" class="">Get involved</a>
+          <a class="nav-donate active" href="donate.html">Donate <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="donate-hero">
+        <div class="container donate-hero-grid">
+          <div>
+            <div class="kicker light">SUPPORT THE PHILIPPINES</div>
+            <h1>Your support<br><em>makes waves.</em></h1>
+            <p>Help turn environmental ambition into action. Contributions can support marine fieldwork, education, and community-led conservation in the Philippines.</p>
+            <div class="trust-line">
+              <span>✳</span> Local impact
+              <span>✳</span> Collective action
+              <span>✳</span> Long-term thinking
+            </div>
+          </div>
+
+          <div class="donation-card">
+            <div class="card-top">
+              <span>MAKE A CONTRIBUTION</span>
+              <span class="demo-chip">DEMO · NOT LIVE</span>
+            </div>
+
+            <h2>Choose your impact.</h2>
+            <p>Preview a donation amount. Payments are not enabled yet.</p>
+
+            <div class="giving-toggle" role="group" aria-label="Donation frequency">
+              <button class="frequency active" type="button" data-frequency="once" aria-pressed="true">Give once</button>
+              <button class="frequency" type="button" data-frequency="monthly" aria-pressed="false">Monthly giving</button>
+            </div>
+
+            <div class="amount-grid" role="group" aria-label="Donation amount">
+              <button class="amount" type="button" data-amount="500">₱500</button>
+              <button class="amount active" type="button" data-amount="1000">₱1,000</button>
+              <button class="amount" type="button" data-amount="2500">₱2,500</button>
+              <button class="amount" type="button" data-amount="5000">₱5,000</button>
+            </div>
+
+            <label class="custom-label" for="customAmount">Or enter a custom amount (PHP)</label>
+            <div class="custom-wrap">
+              <span>₱</span>
+              <input id="customAmount" type="number" inputmode="decimal" min="1" step="1" placeholder="Other amount">
+            </div>
+
+            <div class="donation-summary" aria-live="polite">
+              <span>Your selected contribution</span>
+              <strong id="donationSummary">₱1,000 · one-time</strong>
+            </div>
+
+            <button class="button donate-submit" type="button" disabled>
+              Secure donations coming soon <span>↗</span>
+            </button>
+
+            <p class="donation-disclaimer">
+              This is a website preview, not a payment form. No money or personal information is collected. Official donation instructions will appear after approval.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="kicker">WHAT YOUR SUPPORT CAN ENABLE</div>
+              <h2>Every peso has a purpose.</h2>
+            </div>
+          </div>
+
+          <div class="feature-grid">
+            <article class="simple-card">
+              <span class="simple-icon">〰</span>
+              <h3>Field operations</h3>
+              <p>Logistics, materials, and equipment that support environmental work on the water and along the coast.</p>
+            </article>
+
+            <article class="simple-card">
+              <span class="simple-icon">✳</span>
+              <h3>Education</h3>
+              <p>Learning activities and resources that help young people and communities engage with environmental issues.</p>
+            </article>
+
+            <article class="simple-card">
+              <span class="simple-icon">◎</span>
+              <h3>Community initiatives</h3>
+              <p>Coordination and collaboration that help local conservation efforts grow and continue.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cream-section">
+        <div class="container two-col">
+          <div>
+            <div class="kicker">GIVING WITH CONFIDENCE</div>
+            <h2>Clarity matters.</h2>
+          </div>
+          <div>
+            <p class="lead">We want every supporter to understand how donations are received and used.</p>
+            <p>Before launching payments, this page will need OEOO-approved receiving details, donor receipt information, privacy disclosures, and a verified payment provider. We will publish these details here once confirmed.</p>
+            <p class="micro">Donation receipts and any potential tax treatment depend on the legal receiving entity and applicable rules. No tax deduction is claimed by this demo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section center-section">
+        <div class="container center-cta">
+          <div class="kicker">OTHER WAYS TO HELP</div>
+          <h2>Giving isn’t the only way.</h2>
+          <p>Organizations, schools, and individuals can also explore partnerships and other forms of support.</p>
+          <a class="button dark" href="get-involved.html">Get involved ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="footer-logo" href="index.html">ONE EARTH<br>ONE OCEAN <span>PHILIPPINES</span></a>
+          <p>Local action for healthier waters and stronger coastal communities.</p>
+        </div>
+
+        <div>
+          <strong>Explore</strong>
+          <a href="about.html">About us</a>
+          <a href="projects.html">Our work</a>
+          <a href="get-involved.html">Get involved</a>
+        </div>
+
+        <div>
+          <strong>Support</strong>
+          <a href="donate.html">Donate</a>
+          <a href="get-involved.html#partner">Partner with us</a>
+          <a href="https://www.oeoo.world/" target="_blank" rel="noopener">OEOO Global ↗</a>
+        </div>
+
+        <div>
+          <strong>Connect</strong>
+          <p>Contact details and social channels to be added after OEOO approval.</p>
+          <small>© <span id="year"></span> OEOO Philippines. Demo website.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
